@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak | Eco-Friendly Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#calculator">Carbon Footprint Calculator</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1 class="site-title">Ronak's Eco-Friendly Products</h1>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>At Ronak's Eco-Friendly Products, our mission is to make sustainable living 
+                accessible and convenient for everyone. We believe that even small, everyday choices 
+                can have a significant impact on our environment, and we are committed to offering high-quality,
+                 eco-friendly products that empower our customers to make those choices. From reusable items to 
+                 biodegradable essentials, every product in our collection is carefully sourced to ensure 
+                 it aligns with our values of sustainability and minimal environmental impact.
+                <br>
+                <br>
+                Our team is passionate about promoting a greener lifestyle and helping individuals and 
+                communities reduce their carbon footprint. We prioritize transparency and ethical practices 
+                in every step of our supply chain, ensuring that each product is responsibly produced and 
+                safe for our planet. By choosing Ronak's Eco-Friendly Products, you’re not only supporting a 
+                healthier environment but also becoming part of a community that values positive change and 
+                respects the planet we call home.
+            </p>
+
+            
+            <img src="about.jpg" alt="About Us Image">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="bottle.jpg" alt="Reusable Water Bottle">
+                <h3>Reusable Water Bottle</h3>
+                <p>Eco-friendly materials. Price: $15</p>
+            </div>
+            <div class="product">
+                <img src="tote.jpg" alt="Organic Cotton Tote">
+                <h3>Organic Cotton Tote</h3>
+                <p>100% organic cotton. Price: $10</p>
+            </div>
+            <div class="product">
+                <img src="toothbrush.jpg" alt="Bamboo Toothbrush">
+                <h3>Bamboo Toothbrush</h3>
+                <p>Biodegradable handle. Price: $5</p>
+            </div>
+            <div class="product">
+                <img src="straw.jpg" alt="Reusable Straw Set">
+                <h3>Reusable Straw Set</h3>
+                <p>Made from stainless steel. Price: $8</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Carbon Footprint Calculator -->
+    <!-- Carbon Footprint Calculator -->
+<section id="calculator" class="boxed-section narrow-box">
+    <h2>Carbon Footprint Calculator</h2>
+    <form id="carbonForm">
+        <label for="usage">Product Usage (days):</label>
+        <input type="number" id="usage" name="usage" required>
+        
+        <label for="quantity">Quantity of Product Used:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        
+        <label for="type">Type of Product:</label>
+        <select id="type" name="type">
+            <option value="low">Low Impact</option>
+            <option value="medium">Medium Impact</option>
+            <option value="high">High Impact</option>
+        </select>
+        
+        <button type="button" onclick="calculateCarbon()">Calculate</button>
+    </form>
+    <p id="result"></p>
+</section>
+<br>
+<!-- Contact Form -->
+<section id="contact" class="boxed-section narrow-box">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="Message">Message:</label>
+        <input type="text" id="Message" name="Message" required>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<br>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ronak's Eco-Friendly Products. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
